@@ -1,0 +1,8 @@
+kind: pipeline
+name: ci
+steps:
+- commands:
+  - make check
+  image: zachfi/build-image
+  name: build
+  pull: always
