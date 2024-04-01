@@ -6,7 +6,7 @@
   steps: [
     {
       name: 'build',
-      image: 'zachfi/build-image',
+      image: 'zachfi/shell',
       pull: 'always',
       commands: [
         'make check',
