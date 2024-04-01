@@ -2,6 +2,7 @@ kind: pipeline
 name: ci
 steps:
 - commands:
+  - sudo chown -R makepkg .
   - make check
   image: zachfi/shell
   name: build

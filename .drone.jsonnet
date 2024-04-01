@@ -9,6 +9,7 @@
       image: 'zachfi/shell',
       pull: 'always',
       commands: [
+        'sudo chown -R makepkg .',
         'make check',
       ],
     },
