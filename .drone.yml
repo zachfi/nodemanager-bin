@@ -7,3 +7,6 @@ steps:
   image: zachfi/shell
   name: build
   pull: always
+trigger:
+  branch:
+  - main

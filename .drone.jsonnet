@@ -14,4 +14,7 @@
       ],
     },
   ],
+  trigger: {
+    branch: ['main'],
+  },
 }
