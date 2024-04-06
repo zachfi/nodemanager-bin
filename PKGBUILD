@@ -30,6 +30,6 @@ package() {
 		;;
 	esac
 
-	install -Dm755 "${_realname}" "${pkgdir}/usr/bin/${pkgname}"
+	install -Dm755 "${_realname}" "${pkgdir}/usr/bin/${_realname}"
 	install -Dm644 contrib/arch/nodemanager.service "${pkgdir}/usr/lib/systemd/system/nodemanager.service"
 }
