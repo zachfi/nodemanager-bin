@@ -1,4 +1,4 @@
-.PHONY: all clean drone update
+.PHONY: all clean drone update setup
 
 archs = x86_64 armv7h aarch64
 
@@ -20,6 +20,7 @@ build-%: check
 
 setup:
 	@git remote -v | grep project || git rem add project $(readonlyOrigin)
+	@git fetch project --tags
 
 update: setup
 	@sed 's/{{ version }}/$(VERSION)/' PKGBUILD.template > PKGBUILD

@@ -2,7 +2,7 @@
 
 pkgname=nodemanager-bin
 _realname=nodemanager
-pkgver=0.4.1
+pkgver=0.4.3
 pkgrel=1
 pkgdesc='A Kubernetes controller to manage nodes'
 url="https://github.com/zachfi/$_realname"
@@ -13,9 +13,9 @@ source_x86_64=("https://github.com/zachfi/${_realname}/releases/download/v${pkgv
 source_aarch64=("https://github.com/zachfi/${_realname}/releases/download/v${pkgver}/${_realname}_${pkgver}_linux_arm64.tar.gz")
 source_armv7h=("https://github.com/zachfi/${_realname}/releases/download/v${pkgver}/${_realname}_${pkgver}_linux_armv7.tar.gz")
 #sha256sums=('fa2edae90c7999a6f667bba26a6c63c7165647f77c02c83860237c6d08ee4bbd')
-sha256sums_aarch64=('a3cbe20a56a464b9f940a4b20b38aab5373e9d4bdede3c98865f814c60a06921')
-sha256sums_armv7h=('6a7ec89e63a3ddef9dfc7e59abd8d3541e4e9c20b8a49f18e84c29f0c65fc4a5')
-sha256sums_x86_64=('c012a1451cba1bb19fa06d58401a6c777af3f6c1389f0d6bdfef74e4fecfc9aa')
+sha256sums_aarch64=('e9284179e42e8ff9733efc4013cdb4eb8dca6110b1295b34494948ad341999c4')
+sha256sums_armv7h=('13a3a7cb3e5cb90c9984218aedb50851eda1b0414daadfb82fdadb12c0727732')
+sha256sums_x86_64=('20c5d0c162dc630f4435c9353a3265bc7748f0f41a82ebabbca623ada20bbcf1')
 
 package() {
   case "$CARCH" in
