@@ -7,7 +7,7 @@ Wants=network-online.target
 Type=simple
 Restart=always
 RestartSec=3
-PIDFile=/var/run/nodemanager/nodemanager.pid
+PIDFile=/run/nodemanager/nodemanager.pid
 ExecStart=/usr/bin/nodemanager
 EnvironmentFile=/etc/nodemanager.env
 
