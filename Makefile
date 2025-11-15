@@ -26,6 +26,13 @@ update: setup
 	@sed 's/{{ version }}/$(VERSION)/' PKGBUILD.template > PKGBUILD
 	@updpkgsums
 
+commit:
+	@git add PKGBUILD
+	@git ci -m 'Update nodemanager to $(VERSION)'
+
+push:
+	@git push origin main 
+
 drone:
 	@drone jsonnet --format
 	@drone lint
