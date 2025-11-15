@@ -4,7 +4,7 @@ steps:
 - commands:
   - sudo chown -R makepkg .
   - make check
-  image: zachfi/shell
+  image: reg.dist.svc.cluster.znet:5000/zachfi/aur-build-image
   name: build
   pull: always
 trigger:

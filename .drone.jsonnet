@@ -6,7 +6,7 @@
   steps: [
     {
       name: 'build',
-      image: 'reg.dist.svc.cluster.znet:5000/zachfi/shell',
+      image: 'reg.dist.svc.cluster.znet:5000/zachfi/aur-build-image',
       pull: 'always',
       commands: [
         'sudo chown -R makepkg .',
