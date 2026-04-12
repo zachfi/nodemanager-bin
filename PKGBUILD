@@ -3,7 +3,7 @@
 pkgname=nodemanager-bin
 _realname=nodemanager
 pkgver=0.7.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A Kubernetes controller to manage nodes'
 url="https://github.com/zachfi/$_realname"
 arch=(aarch64 armv7h x86_64)
