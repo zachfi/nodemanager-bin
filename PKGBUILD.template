@@ -14,9 +14,9 @@ source_aarch64=("https://github.com/zachfi/${_realname}/releases/download/v${pkg
                 "https://github.com/zachfi/${_realname}/releases/download/v${pkgver}/${_realname}-agent_${pkgver}_linux_arm64.tar.gz")
 source_armv7h=("https://github.com/zachfi/${_realname}/releases/download/v${pkgver}/${_realname}_${pkgver}_linux_armv7.tar.gz"
                "https://github.com/zachfi/${_realname}/releases/download/v${pkgver}/${_realname}-agent_${pkgver}_linux_armv7.tar.gz")
+sha256sums_x86_64=('SKIP' 'SKIP')
 sha256sums_aarch64=('SKIP' 'SKIP')
 sha256sums_armv7h=('SKIP' 'SKIP')
-sha256sums_x86_64=('SKIP' 'SKIP')
 
 package() {
   case "$CARCH" in
